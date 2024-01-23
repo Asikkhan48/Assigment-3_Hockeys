@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <link
@@ -44,105 +44,388 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
-</head>
+  </head>
 
-<!-- Body Part -->
-<body>
-
+  <!-- Body Part -->
+  <body>
     <!-- Header -->
 
     <header class="container mx-auto">
-<!-- Navbar -->
-<div class="navbar bg-base-100">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      <!-- Navbar -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] text-[#424247] font-semibold p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contant</a></li>
+            </ul>
+          </div>
+          <a class="text-4xl text-[#131318] font-bold"
+            >Hocky<span class="text-[#FF4240]">'</span>s</a
+          >
         </div>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] text-[#424247] font-semibold p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>Item 1</a></li>
-          <li><a>Item 2</a></li>
-          <li><a>Item 3</a></li>
-        </ul>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-[#FF4240]"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contant</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass mr-5 text-1xl lg:text-2xl"></i>
+          <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+        </div>
       </div>
-      <a class="text-4xl text-[#131318] font-bold">Hocky<span class="text-[#FF4240]">'</span>s</a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li class="text-[#FF4240]"><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Pages</a></li>
-        <li><a>Blog</a></li>
-        <li><a>Contant</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end">
-        <i class="fa-solid fa-magnifying-glass mr-5 text-2xl"></i>
-        <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
-      </div>
-  </div>
     </header>
 
     <!-- Main -->
-    <Main>
-        <!-- Hero Section -->
-        <section class="container mx-auto my-10">
+    <main>
 
-            <div class="carousel">
 
-                <!-- Slide-1 -->
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-
-                <!-- Slide-2 -->
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-
-                <!-- Slide-3 -->
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-
-                <!-- Slide-4 -->
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
-              </div>
-        </section>
-
-        <section class="container mx-auto">
-
-            <div>
-                <h1 class="text-4xl font-extrabold text-[#131318] text-center">Professional Hockeys Club</h1>
-                <p class="text-center font-semibold mt-4">Portage Lake Hockey Club in 1904, one of the first professional hockey clubs in the world</p>
+      <!-- Hero Section -->
+      <section class="container mx-auto my-10">
+        <div class="carousel">
+          <!-- Slide-1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
- 
+          </div>
 
-        </section>
+          <!-- Slide-2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide-3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Slide-4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
+      <!-- Professional Hockey Section -->
+      <section class="container mx-auto my-10">
+        <div>
+          <h1 class=" text-2xl lg:text-4xl font-extrabold text-[#131318] text-center">
+            Professional Hockeys Club
+          </h1>
+          <p class="text-center font-normal lg:font-semibold mt-4">
+            Portage Lake Hockey Club in 1904, one of the first professional
+            hockey clubs in the world
+          </p>
+        </div>
+      </section>
+
+      <!-- Progress Facilities -->
+      <section class="container mx-auto">
+        <div class="text-center grid grid-cols-1 lg:grid-cols-4">
+
+          <div>
+            <div class= "radial-progress text-secondary" style="--value:87;" role="progressbar">87%</div>
+          <h3 class="text-2xl font-medium mt-5">Prayer Facility</h3>
+          <p>Amet consectetur. Condimentum 
+            <br> dignissim adipiscing .</p>
+
+          </div>
+
+          <div>
+            <div class="radial-progress text-primary" style="--value:95;" role="progressbar">95%</div>
+            <h3 class="text-2xl font-medium mt-5">Experienced Coach</h3>
+            <p>Amet consectetur. Condimentum 
+              <br> dignissim adipiscing .</p>
+          </div>
+
+          <div>
+
+            <div class="radial-progress text-yellow-300" style="--value:90;" role="progressbar">90%</div>
+          <h3 class="text-2xl font-medium mt-5">Senior Player</h3>
+          <p>Amet consectetur. Condimentum 
+            <br> dignissim adipiscing .</p>
+
+          </div>
+          <div>
+
+            <div class="radial-progress text-cyan-300" style="--value:80;" role="progressbar">80%</div>
+          <h3 class="text-2xl font-medium mt-5">Training Ground</h3>
+          <p>Amet consectetur. Condimentum 
+            <br> dignissim adipiscing .</p>
+
+          </div>
+
+        </div>
+      </section>
 
 
-    </Main>
+      <!-- Program Section -->
+
+      <section class="container mx-auto my-10">
+        <div>
+          <h1 class=" text-2xl lg:text-4xl font-extrabold text-[#131318] text-center">
+            Program Sections
+          </h1>
+          <p class="text-center font-normal lg:font-semibold mt-4">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+          </p>
+        </div>
+      </section>
+
+      <!-- Program Hero Section -->
+
+      <section class="container mx-auto my-10">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+          
+          <!-- div-1 -->
+          <div class="hero min-h-screen" style="background-image: url(./Images/2.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-left text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-2xl lg:text-5xl font-bold">Junior Program</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">Register Now!</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- div-2 -->
+
+          <div class="hero min-h-screen" style="background-image: url(./Images/3.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-left text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-2xl lg:text-5xl font-bold">Teenager Program</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Program Hero Section-2 -->
+      <!-- div-3 -->
+
+      <section class="container mx-auto my-10">
+        <div class="container mx-auto my-10">
+          <div class="hero min-h-screen rounded-lg" style="background-image: url(./Images/4.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-2xl lg:text-5xl font-bold">Professional Program</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">Register Now!</button>
+              </div>
+            </div>
+          </div>
     
+        </div>
+      </section>
+
+
+     <!-- Our New Product -->
+
+     <section class="container mx-auto my-10">
+      <div>
+        <h1 class=" text-2xl lg:text-4xl font-extrabold text-[#131318] text-center">
+          Our New Product
+        </h1>
+        <p class="text-center font-normal lg:font-semibold mt-4">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+        </p>
+      </div>
+     </section>
+
+
+      <!-- Our Products Cards -->
+      <section class="container mx-auto my-10">
+
+        <div class="container grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-10">
+            <!-- 1st product Card -->
+          <div class="flex-row lg:flex gap-20 items-center box-border bg-white shadow-lg p-3">
+            
+            <div>
+              <img src="./Images/5.png" alt="">
+            </div>
+            <div class="gap-10 space-y-3">
+              <i class="fa-solid fa-star">5.00</i>
+              <i class="fa-solid fa-eye">20</i>
+              <i class="fa-solid fa-heart">200</i>
+              <h4 class="text-2xl font-medium">World Cup Flags Football</h4>
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              <p class="#FF4240">Price - $22.00</p> <i class="fa-solid fa-cart-shopping">  Delivery Fee : Free</i>
+            </div>
+          </div>
+
+          <!-- 2nd product Card -->
+
+          <div class="flex-row lg:flex gap-20 items-center box-border bg-white shadow-lg p-3">
+            
+            <div>
+              <img src="./Images/6.png" alt="">
+            </div>
+            <div class="gap-10 space-y-3">
+              <i class="fa-solid fa-star">5.00</i>
+              <i class="fa-solid fa-eye">20</i>
+              <i class="fa-solid fa-heart">200</i>
+              <h4 class="text-2xl font-medium">World Cup Flags Football</h4>
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              <p class="#FF4240">Price - $22.00</p> <i class="fa-solid fa-cart-shopping">  Delivery Fee : Free</i>
+            </div>
+          </div>
+
+          <!-- 3rd product card -->
+
+          <div class="flex-row lg:flex gap-20 items-center box-border bg-white shadow-lg p-3">
+            
+            <div>
+              <img src="./Images/7.png" alt="">
+            </div>
+            <div class="gap-10 space-y-3">
+              <i class="fa-solid fa-star">5.00</i>
+              <i class="fa-solid fa-eye">20</i>
+              <i class="fa-solid fa-heart">200</i>
+              <h4 class="text-2xl font-medium">World Cup Flags Football</h4>
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              <p class="#FF4240">Price - $22.00</p> <i class="fa-solid fa-cart-shopping">  Delivery Fee : Free</i>
+            </div>
+          </div>
+
+          <!-- 4th product card-->
+         
+          <div class="flex-row lg:flex gap-20 items-center box-border bg-white shadow-lg p-3">
+            
+            <div>
+              <img src="./Images/8.png" alt="">
+            </div>
+            <div class="gap-10 space-y-3">
+              <i class="fa-solid fa-star">5.00</i>
+              <i class="fa-solid fa-eye">20</i>
+              <i class="fa-solid fa-heart">200</i>
+              <h4 class="text-2xl font-medium">World Cup Flags Football</h4>
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              <p class="#FF4240">Price - $22.00</p> <i class="fa-solid fa-cart-shopping">  Delivery Fee : Free</i>
+            </div>
+          </div>
+
+          <!-- 5th Product Card -->
+
+          <div class="flex-row lg:flex gap-20 items-center box-border bg-white shadow-lg p-3">
+            
+            <div>
+              <img src="./Images/9.png" alt="">
+            </div>
+            <div class="gap-10 space-y-3">
+              <i class="fa-solid fa-star">5.00</i>
+              <i class="fa-solid fa-eye">20</i>
+              <i class="fa-solid fa-heart">200</i>
+              <h4 class="text-2xl font-medium">World Cup Flags Football</h4>
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              <p class="#FF4240">Price - $22.00</p> <i class="fa-solid fa-cart-shopping">  Delivery Fee : Free</i>
+            </div>
+          </div>
+
+          <!-- 6th Product Card -->
+
+          <div class="flex-row lg:flex gap-20 items-center box-border bg-white shadow-lg p-3">
+            
+            <div>
+              <img src="./Images/10.png" alt="">
+            </div>
+            <div class="gap-10 space-y-3">
+              <i class="fa-solid fa-star">5.00</i>
+              <i class="fa-solid fa-eye">20</i>
+              <i class="fa-solid fa-heart">200</i>
+              <h4 class="text-2xl font-medium">World Cup Flags Football</h4>
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              <p class="#FF4240">Price - $22.00</p> <i class="fa-solid fa-cart-shopping">  Delivery Fee : Free</i>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Cliant Qusestion -->
+
+      <section class="container mx-auto my-10">
+        <div>
+          <h1 class=" text-2xl lg:text-4xl font-extrabold text-[#131318] text-center">
+            Clients Question
+          </h1>
+          <p class="text-center font-normal lg:font-semibold mt-4">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+          </p>
+        </div>
+       </section>
+
+       <!--  -->
+
+       <section>
+
+       </section>
+    </main>
+
     <!-- Footer -->
-</body>
+  </body>
 </html>
